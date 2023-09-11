@@ -5,9 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justice for legal Solution</title>
     <link rel="icon" href="./images/business.png">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/aafdc876db.js" crossorigin="anonymous"></script>
     <!-- Daisy and Tailwind link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Color Default Tailwind -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'btn-color': '#B68C5A',
+                'p-font': '#707070',
+              }
+            }
+          }
+        }
+      </script>
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +39,37 @@
 </head>
 <body>
     <header class="max-w-6xl mx-auto">
-        
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>Services <i class="fa-solid fa-chevron-right"></i> </a></li>
+                        <li><a>Cases <i class="fa-solid fa-chevron-right"></i> </a></li>
+                        <li><a>Blog <i class="fa-solid fa-chevron-right"></i> </a></li>
+                        <li><a>Contact Us <i class="fa-solid fa-chevron-right"></i> </a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost normal-case text-4xl font-extrabold font-garamond"> <img class="w-11 mr-3" src="./images/business.png" alt=""> Justice</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-p-font">
+                    <li><a>Home</a></li>
+                    <li><a>Services <i class="fa-solid fa-chevron-right"></i> </a></li>
+                    <li><a>Cases <i class="fa-solid fa-chevron-right"></i> </a></li>
+                    <li><a>Blog <i class="fa-solid fa-chevron-right"></i> </a></li>
+                    <li><a>Contact Us <i class="fa-solid fa-chevron-right"></i> </a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn bg-btn-color text-white">Free Consultation</a>
+                </div>
+              </div>
+        </nav>
     </header>
     <main class="max-w-6xl mx-auto">
 
